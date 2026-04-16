@@ -1,7 +1,7 @@
 """
 ╔══════════════════════════════════════════════════════════════╗
 ║          SISTEMA DE RESERVAS DE CANCHAS DEPORTIVAS           ║
-║                     SportField Manager                       ║
+║                        PlayBooking                           ║
 ╚══════════════════════════════════════════════════════════════╝
 Autores: Nicolás Armero Rosero, Santiago Andres Garcia Sanchez,
          Karen Juliana Dueñas, Sara Mesa Lenis
@@ -524,7 +524,7 @@ MENU_PRINCIPAL = """
 
 def main():
     while True:
-        encabezado("SISTEMA DE RESERVAS — SportField Manager")
+        encabezado("SISTEMA DE RESERVAS — PlayBooking")
         print(MENU_PRINCIPAL)
 
         op = pedir_opcion({"1", "2", "3", "4", "5", "6", "7", "0"})
