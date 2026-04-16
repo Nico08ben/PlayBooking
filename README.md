@@ -109,4 +109,4 @@ Este MVP fue desarrollado por:
 
 **Asignatura:** Programación (G02)  
 **Facultad de Ingeniería - Ingeniería de Datos e Inteligencia Artificial**  
-**Universidad Autónoma de Occidente
+**Universidad Autónoma de Occidente**
