@@ -28,9 +28,9 @@ class Cancha:
     def activar(self):    self.__activa = True
 
     def get_precio_franja(self, hora):
-        if 6 <= hora < 14:
+        if 6 <= hora < 12:
             return self.__precio_hora.get("6-12", 0)
-        elif 14 <= hora < 18:
+        elif 13 <= hora < 17:
             return self.__precio_hora.get("13-17", 0)
         else:
             return self.__precio_hora.get("18-22", 0)
@@ -64,13 +64,3 @@ class Cancha:
         return (f"[{self.__id}] {self.__nombre}  [{estado}]\n"
                 f"       {self.__descripcion}\n"
                 f"       Precios/hr: {self.precio_resumen()}")
-
-    def to_dict(self):
-        return {
-            "id":          self.__id,
-            "nombre":      self.__nombre,
-            "descripcion": self.__descripcion,
-            "precio_hora": self.__precio_hora,
-            "activa":      self.__activa,
-            "tipo":        self.__class__.__name__,
-        }

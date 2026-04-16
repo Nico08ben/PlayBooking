@@ -42,17 +42,6 @@ class Usuario:
                 f"{email_str}"
                 f"  | 🎫 Reservas: {self.__total_reservas}")
 
-    def to_dict(self):
-        return {
-            "cedula":         self.__cedula,
-            "nombre":         self.__nombre,
-            "apellido":       self.__apellido,
-            "numero":         self.__numero,
-            "email":          self.__email,
-            "registrado":     self.__registrado,
-            "total_reservas": self.__total_reservas,
-        }
-
     def __eq__(self, other):
         return isinstance(other, Usuario) and self.__cedula == other.get_cedula()
 

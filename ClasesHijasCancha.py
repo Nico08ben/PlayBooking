@@ -28,11 +28,6 @@ class Futbol(Cancha):
                 f"       ⚽ Fútbol {self.tipo_cancha} — {self.jugadores}v{self.jugadores}\n"
                 f"       Incluye: cancha y balón")
 
-    def to_dict(self):
-        d = super().to_dict()
-        d.update({"tipo_cancha": self.tipo_cancha, "jugadores": self.jugadores})
-        return d
-
 
 class Voley(Cancha):
     TIPOS_VALIDOS = ("Normal", "Playa")
@@ -51,11 +46,6 @@ class Voley(Cancha):
                 f"       🏐 Vóley {self.tipo_cancha}\n"
                 f"       Incluye: cancha y balón")
 
-    def to_dict(self):
-        d = super().to_dict()
-        d["tipo_cancha"] = self.tipo_cancha
-        return d
-
 
 class Padel(Cancha):
     JUGADORES_VALIDOS = (2, 4)
@@ -73,8 +63,3 @@ class Padel(Cancha):
         return (f"{base}\n"
                 f"       🎾 Pádel — {self.jugadores} jugadores\n"
                 f"       Incluye: cancha, raquetas y pelota")
-
-    def to_dict(self):
-        d = super().to_dict()
-        d["jugadores"] = self.jugadores
-        return d

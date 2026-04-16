@@ -1,7 +1,7 @@
 """
 ╔══════════════════════════════════════════════════════════════╗
 ║          SISTEMA DE RESERVAS DE CANCHAS DEPORTIVAS           ║
-║                        PlayBooking                           ║
+║                         PlayBooking                          ║
 ╚══════════════════════════════════════════════════════════════╝
 Autores: Nicolás Armero Rosero, Santiago Andres Garcia Sanchez,
          Karen Juliana Dueñas, Sara Mesa Lenis
